@@ -265,6 +265,7 @@ nav li:hover {
 
 .about-me p{
     padding-right: 30px;
+    font-size: 18px;
 }
 
 
@@ -348,6 +349,7 @@ nav li:hover {
 
 .card-list .card-item{
     list-style: none;
+    height: 500px
 }
 
 .card-list .card-item .card-link{
@@ -392,6 +394,12 @@ nav li:hover {
     color: black;
     background: black;
 }
+
+.card-button {
+    margin-top: 10px;
+}
+
+
 
 .card-wrapper
 .swiper-pagination-bullet {
@@ -573,9 +581,16 @@ nav li:hover {
     padding: 100px;
 }
 
-.input-grp {
-
+.input-grp input::placeholder{
+    font-family: "Hanken Grotesk", serif;
+    font-size: 15px;
 }
+
+.message {
+    height: 200px;
+}
+
+
 
 .contact form .input-box input,
 .contact form textarea {
@@ -589,8 +604,16 @@ nav li:hover {
     resize: none;
 }
 
-.contact .btn {
+.contact input.btn {
     cursor: pointer;
+    font-family: "Hanken Grotesk", serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.contact input.btn:hover {
+    color: white;
+    background: rgb(24, 23, 23);
 }
 
 
@@ -598,7 +621,6 @@ nav li:hover {
 .socials {
     width: 50%;
     justify-items: center;
-
 }
 
 .socials a{

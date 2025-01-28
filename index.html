@@ -71,9 +71,9 @@
     <div class="about">
       <div class="about-me">
         <h1 id="about"></h1>
-        <h1 class="about-title" style="border-top: 1px solid rgb(0, 0, 0);">About Me</h1>
-        <p>I'm Luigi, a graduate of BS Computer Engineering at Angeles University Foundation With experience in firmware development, web design, and quality 
-        assurance, I thrive on building innovative solutions using tools like HTML, CSS, JavaScript, and Laravel. 
+        <h1 class="about-title" style="border-top: 1px solid rgb(0, 0, 0);">About</h1>
+        <p>I'm Luigi, a graduate of BS Computer Engineering at Angeles University Foundation with experience in firmware development, web development, and quality 
+        assurance, I thrive on learning new technologies and collaborating innovative solutions. 
         Let’s create something extraordinary together!</p>
 
         
@@ -115,51 +115,67 @@
         <div class="card-wrapper">
           <ul class="card-list swiper-wrapper">
             <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img src="./assets/pic/proj/barecodescanner.png" alt="barcode scanner">
+              <a href="https://github.com/llu258/Timekeeper" class="card-link">
+                <img src="./assets/pic/proj/barecodescanner.png" alt="barcode scanner" class="card-image">
                 <h2 class="card-title">
-                  Timekeeper: Barcode scanner project for employee and student entry/exit timekeeping
+                  Timekeeper: Attendance Scanning Project
                 </h2>
+                <ul class="project-type">
+                  <li>Software Development</li>
+                </ul>
+                
                 <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
               </a>
             </li>
 
             <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img src="./assets/pic/proj/myelemes.png" alt="myelemes">
+              <a href="https://github.com/llu258/myElemes" class="card-link">
+                <img src="./assets/pic/proj/myelemes.png" alt="myelemes" class="card-image">
                 <h2 class="card-title">
                   MyElemes: Learning Management System
                 </h2>
+                <ul class="project-type">
+                  <li>Software Development</li>
+                </ul>
                 <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
               </a>
             </li>
 
             <li class="card-item swiper-slide">
               <a href="#" class="card-link">
-                <img src="./assets/pic/proj/carrentalwebsite.png" alt="carrentalwebsite">
+                <img src="./assets/pic/proj/carrentalwebsite.png" alt="carrentalwebsite" class="card-image">
                 <h2 class="card-title">
                   Drivvu: Car Rental Website
                 </h2>
+                <ul class="project-type">
+                  <li>Web Development</li>
+                </ul>
                 <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
               </a>
             </li>
 
             <li class="card-item swiper-slide">
               <a href="#" class="card-link">
-                <img src="./assets/pic/proj/warehousemanagement.png" alt="warehousemgmttestcases">
+                <img src="./assets/pic/proj/warehousemanagement.png" alt="warehousemgmttestcases" class="card-image">
                 <h2 class="card-title">
                   Warehouse Management System Test Cases
                 </h2>
+                <ul class="project-type">
+                  <li>Software QA</li>
+                </ul>
                 <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
               </a>
             </li>
 
             <li class="card-item swiper-slide">
               <a href="#" class="card-link">
-                <img src="./assets/pic/proj/golfscoringsystem.jpg" alt="golfscoringsystem">
+                <img src="./assets/pic/proj/golfscoringsystem.jpg" alt="golfscoringsystem" class="card-image">
                 <h2 class="card-title">
                   GolfServ: Golf Scoring Test Plan
                 </h2>
+                <ul class="project-type">
+                  <li>Software QA</li>
+                </ul>
                 <!-- This is the link: file:///C:/Users/balut/OneDrive/Desktop/SisonJLM-TestPlanforGolfServ.pdf -->
                 <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
               </a>
@@ -254,20 +270,21 @@
 
     <div class="contact" id="contact">
       <h1 class="contact-title">Contact</h1>
-      <form action="#" class="form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <!-- Public Key: 4d704133-c2cd-4c03-9a24-ac806f1b393c -->
         <div class="input-box">
           <div class="input-grp">
+            <input type="hidden" name="access_key" value="4d704133-c2cd-4c03-9a24-ac806f1b393c">
             <input type="text"  placeholder="Name">
             <input type="email" placeholder="E-Mail Address">
             <input type="number"  placeholder="Phone Number">
             <input type="text"  placeholder="Subject">
-            <textarea name="" id="" placeholder="Your Message"></textarea>
+            <textarea name="message" class="message" id="" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
           </div>
         
 
           <div class="socials">
-          <h3>My Socials</h3>
             <div class="socials-img">
               <img src="./assets/pic/professionalpic2.png" alt="">
             </div>
