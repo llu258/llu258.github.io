@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".//style.css" type="text/css">
-    <title>Jesus Luigi Sison</title>
-
+    <title>[DEMO] Jesus Luigi Sison | Web Developer | Software QA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>  
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-
-  <body>
-
+    
+</head>
+<body>
     <nav>
-      <input type="checkbox" id="sidebar-active">
-      <label for="sidebar-active" class="open-menu-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-      </label>
+      <div class="nav-container">
+        <a href="#" class="home-link"><label class="nav-title">
+          <!-- <img src="./assets/pic/logo.png" alt="">-->
+           LUIGI SISON</label></a>
 
-      <div class="links-container">
-        <label for="sidebar-active" class="close-menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </label>
-
-        <a class="home-link" href="#"><h1 class="nav-title">JESUS LUIGI SISON</h1></a>
-        <ul class="nav-content">
+        <button class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        
+        <ul class="nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experiences">Experience</a></li>
@@ -36,285 +34,312 @@
         </ul>
         
       </div>
-        
       
-
-        <!--ADD TOGGLE FOR RESPONSIVENESS-->
     </nav>
     
-    <!--ADD CONTACTS DIRECTORY AS WELL AS MY UPDATED CV-->
-    <div class="banner">
-      <div class="banner-desc">
-        <h1>Hi, I'm <span>Luigi</span></h1>
-        <span class="head-bottom"></span>
-        <h3 class="typing">Web Developer | QA</h3>
-        <p>A Software QA engineer and aspiring developer who thrives
-          learning and creating through technology.</p>
-          
-        
-        <!-- Attach updated resume below -->
-        <a href="https://drive.google.com/file/d/1Uga86SqUcvAFyyzzGiA2TKXclZH2NUCe/view?usp=sharing&export=download"> 
-          <button class="button" type="button">
-            <span class="material-symbols-outlined">download</span>
-            Download CV 
-          </button>
-        </a>
-      </div>
+    <section class="hero header finisher-header">
+      <div class="container">
+        <div class="row">
+          <div class="content desc">
+            <h1>Hi, I'm<span>&nbsp;Luigi </span></h1>
+            <h3>QA Engineer | Web Developer</h3>
+            <p>With a background in software engineering and web development. 
+              I specialize in creating innovative and user-focused approach to digital solutions, driven by a passion for continuous learning and technological advancement.</p>
 
-      <div class="banner-pic">
-        <div class="banner-img"> 
-          <img src="./assets/pic/professionalpic.png"> 
+            <!-- Attach updated resume below -->
+            <div class="cta-btn">
+
+              <a href="https://drive.google.com/file/d/1Uga86SqUcvAFyyzzGiA2TKXclZH2NUCe/view?usp=sharing" download> 
+                <button class="button" type="button">
+                  <i class='bx bxs-download bx-flip-horizontal' ></i>
+                  <!-- Add download icon -->
+                  Download CV 
+                </button>
+              </a>
+
+              <div class="socials">
+                  <div class="social-icons">
+                    <a href="https://github.com/llu258/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jesus-luigi-sison-a695221a5/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin">
+                    </a>
+                  </div>
+              </div>
+
+          </div>
+
+          </div>
+
+          <div class="content img">
+            <img src="./assets/pic/professionalpic.png" class="hero-img">
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="about">
-      <div class="about-me">
-        <h1 id="about"></h1>
-        <h1 class="about-title" style="border-top: 1px solid rgb(0, 0, 0);">About</h1>
-        <p>I'm Luigi, a graduate of BS Computer Engineering at Angeles University Foundation with experience in firmware development, web development, and quality 
-        assurance, I thrive on learning new technologies and collaborating innovative solutions. 
-        Let’s create something extraordinary together!</p>
-
-        
-      </div>
-
-      <div class="techstack">
-        <h3>Technologies that I currently working on through my projects are:</h3>
-        <p>
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="bootstrap">
-          <img src="https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg" alt="objectivec">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="laravel">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="figma">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg" alt="sequelize">
-          <img src="https://img.icons8.com/fluency/48/microsoft-excel-2019.png" alt="microsoft-excel-2019">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-          
-          
-          
-          
-      </div>
-
-
-    </div>
-
-    <div class="projects" id="projects">
-      <h1 class="proj-title" style="border-top: 1px solid rgb(0, 0, 0);">Projects</h1>
-      <!-- FOR DEVELOPMENT 
-      <ul class="project-type">
-        <li>Web Development</li>
-        <li>Software Development</li>
-        <li>Software QA</li>
-      </ul>
-        -->
-      <!-- CARD IMAGE -->
-      <div class="container swiper">
-        <div class="card-wrapper">
-          <ul class="card-list swiper-wrapper">
-            <li class="card-item swiper-slide">
-              <a href="https://github.com/llu258/Timekeeper" class="card-link">
-                <img src="./assets/pic/proj/barecodescanner.png" alt="barcode scanner" class="card-image">
-                <h2 class="card-title">
-                  Timekeeper: Attendance Scanning Project
-                </h2>
-                <ul class="project-type">
-                  <li>Software Development</li>
-                </ul>
-                
-                <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
-              </a>
-            </li>
-
-            <li class="card-item swiper-slide">
-              <a href="https://github.com/llu258/myElemes" class="card-link">
-                <img src="./assets/pic/proj/myelemes.png" alt="myelemes" class="card-image">
-                <h2 class="card-title">
-                  MyElemes: Learning Management System
-                </h2>
-                <ul class="project-type">
-                  <li>Software Development</li>
-                </ul>
-                <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
-              </a>
-            </li>
-
-            <li class="card-item swiper-slide">
-              <a href="https://github.com/llu258/carrentalproj" class="card-link">
-                <img src="./assets/pic/proj/carrentalwebsite.png" alt="carrentalwebsite" class="card-image">
-                <h2 class="card-title">
-                  Drivvu: Car Rental Website
-                </h2>
-                <ul class="project-type">
-                  <li>Web Development</li>
-                </ul>
-                <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
-              </a>
-            </li>
-
-            <li class="card-item swiper-slide">
-              <a href="https://docs.google.com/spreadsheets/d/1LzoGfSwKcqrWjXm2Uk8vj3B20Zu6f8De/edit?usp=sharing&ouid=117268186470265324460&rtpof=true&sd=true" class="card-link">
-                <img src="./assets/pic/proj/warehousemanagement.png" alt="warehousemgmttestcases" class="card-image">
-                <h2 class="card-title">
-                  Warehouse Management System Test Cases
-                </h2>
-                <ul class="project-type">
-                  <li>Software QA</li>
-                </ul>
-                <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
-              </a>
-            </li>
-
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img src="./assets/pic/proj/golfscoringsystem.jpg" alt="golfscoringsystem" class="card-image">
-                <h2 class="card-title">
-                  GolfServ: Golf Scoring Test Plan
-                </h2>
-                <ul class="project-type">
-                  <li>Software QA</li>
-                </ul>
-                <!-- This is the link: file:///C:/Users/balut/OneDrive/Desktop/SisonJLM-TestPlanforGolfServ.pdf -->
-                <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
-              </a>
-            </li>
-
-          </ul>
-
-          <div class="swiper-pagination"></div>
-          <div class="swiper-slide-button swiper-button-prev"></div>
-          <div class="swiper-slide-button swiper-button-next"></div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="experience" id="experiences">
-      <h1 class="exp-title">Experience</h1>
-
-      <div class="widget">
-        <div class="tabs">
-
-          <input type="radio" id="experience" name="tabs" checked />
-          <label for="experience">Professional Experience</label>
       
-          <input type="radio" id="certificate" name="tabs" />
-          <label for="certificate">Certificates and Badges</label>
 
+    </section>
+    
+    <section id="about">
+      <div class="content">
+        <div class="about-me">
+            <h1 class="about-h1">About</h1>
+            <p>I'm Luigi, a passionate and dedicated BS Computer Engineering graduate from Angeles University Foundation. 
+              With hands-on experience in web and software development, quality assurance, and technical documentation through remote roles, 
+              internships, and volunteer projects, I thrive on turning ideas into impactful solutions. Whether collaborating on full-stack applications 
+              or enhancing system functionalities, I find joy in problem-solving and continuous learning.</p>
+            <p>Beyond coding, I enjoy exploring emerging technologies, continuously seeking ways to innovate and streamline processes. 
+              I’m always eager to collaborate with like-minded individuals, believing that great ideas are often born through teamwork and shared creativity.
+              Let’s push boundaries and craft something extraordinary together!</p>
         </div>
+        
+        <div class="techstack">
 
-        <div class="tab-content">
-
-          <div class="tab-content-1">
-            <h2>Professional Experience</h2>
-
-              <h3>Software QA Engineer Intern - Elinnov Technologies</h3>  
-              <h4>Aug 2024 - Nov 2024</h4>
-              <ul>
-                <li>Do QA checks from software testing following the methodologies such as manual, regression, functional, end-to-end testing; 
-                  designing and updating test cases. Moreover, conducted thorough research about sustainability and its related data.</li>
-              </ul>
-
-              <h3>Independent Contractor - Appen Ltd.</h3>  
-              <h4>Aug 2023 - Feb 2024</h4>
-              <ul>
-                <li>Do fine-tuning and analyzing large-language models (LLMs) data under coding/programming domain. </li>
-              </ul>
-
-              <h3>Student Intern - Tigernethost OPC</h3>  
-              <h4>March 2022 - May 2022</h4>
-              <ul>
-                <li>Do research and technical documentations for firmware projects and contribute system functionality sketches (Arduino)</li>
-              </ul>
-          </div>
+            <p class="text">Technologies that I currently working on through my projects are:</p>
+            <p class="icon">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="postgresql">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react">
+                <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma">
+                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="laravel">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="expressjs">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="nodejs">
+                <img src="https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg" alt="objectivec">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" alt="markdown">
           
-          <div class="tab-content-2">
-            <h2>Certificates and Badges</h2>
-            <div class="cert-tile">
-              <a href="https://www.credly.com/badges/3c4aa8b3-d5b4-4f29-938f-35b740bcfdb0" class="cert-item">
-                <img src="./assets/pic/cert/awsAcademyCloudFoundation.png" class="cert-image">
-                  <p>AWS Academy Cloud Foundation</p>
-              </a>
-              <a href="https://www.credly.com/badges/941291c6-0010-4343-b00c-7c9527b6d577" class="cert-item">
-                <img src="./assets/pic/cert/awsAcademyCloudArchitecting.png" class="cert-image">
-                  <p>AWS Academy Cloud Architecting</p>
-              </a>
-              <a href="#" class="cert-item">
-                <img src="./assets/pic/cert/cProgrammingForEmbeddedApps.png" class="cert-image">
-                  <p>C Programming For Embedded Applications</p>
-              </a>
-              <a href="#" class="cert-item">
-                <img src="./assets/pic/cert/introToSoftwareTesting.png" class="cert-image">
-                  <p>Software Testing Introduction</p>
-              </a>
-              <a href="#" class="cert-item">
-                <img src="./assets/pic/cert/introSQLDatacamp.png" class="cert-image">
-                  <p>SQL Introductory</p>
-              </a>
-              <a href="#" class="cert-item">
-                <img src="./assets/pic/cert/intermediateSQLDaatacamp.png" class="cert-image">
-                  <p>SQL Intermediate</p>
-              </a>
-              <a href="#" class="cert-item">
-                <img src="./assets/pic/cert/machineLearning.png" class="cert-image">
-                  <p>Machine Learning</p>
-              </a>
-            </div>
-          </div>
-     
+              </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="contact" id="contact">
-      <h1 class="contact-title">Contact</h1>
-      <form action="https://api.web3forms.com/submit" method="POST" class="form">
-        <!-- Public Key: 4d704133-c2cd-4c03-9a24-ac806f1b393c -->
-        <div class="input-box">
-          <div class="input-grp">
-            <input type="hidden" name="access_key" value="4d704133-c2cd-4c03-9a24-ac806f1b393c">
-            <input type="text"  placeholder="Name">
-            <input type="email" placeholder="E-Mail Address">
-            <input type="number"  placeholder="Phone Number">
-            <input type="text"  placeholder="Subject">
-            <textarea name="message" class="message" id="" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+    <section id="projects">
+      <div class="content">
+        <h1>Projects</h1>
+
+        <div class="container swiper">
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="https://github.com/llu258/Timekeeper" class="card-link">
+                    <img src="./assets/pic/proj/barecodescanner.png" alt="barcode scanner" class="card-image">
+                    <h2 class="card-title">
+                      Timekeeper: Attendance Scanning Project
+                    </h2>
+                    <ul class="project-type">
+                      <li>Software Development</li>
+                    </ul>
+                    
+                    <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
+                  </a>
+                </li>
+    
+                <li class="card-item swiper-slide">
+                  <a href="https://github.com/llu258/myElemes" class="card-link">
+                    <img src="./assets/pic/proj/myelemes.png" alt="myelemes" class="card-image">
+                    <h2 class="card-title">
+                      MyElemes: Learning Management System
+                    </h2>
+                    <ul class="project-type">
+                      <li>Software Development</li>
+                    </ul>
+                    <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
+                  </a>
+                </li>
+    
+                <li class="card-item swiper-slide">
+                  <a href="https://github.com/llu258/carrentalproj" class="card-link">
+                    <img src="./assets/pic/proj/carrentalwebsite.png" alt="carrentalwebsite" class="card-image">
+                    <h2 class="card-title">
+                      Drivvu: Car Rental Website
+                    </h2>
+                    <ul class="project-type">
+                      <li>Web Development</li>
+                    </ul>
+                    <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
+                  </a>
+                </li>
+    
+                <li class="card-item swiper-slide">
+                  <a href="https://docs.google.com/spreadsheets/d/1LzoGfSwKcqrWjXm2Uk8vj3B20Zu6f8De/edit?usp=sharing&ouid=117268186470265324460&rtpof=true&sd=true" class="card-link">
+                    <img src="./assets/pic/proj/warehousemanagement.png" alt="warehousemgmttestcases" class="card-image">
+                    <h2 class="card-title">
+                      Warehouse Management System Test Cases
+                    </h2>
+                    <ul class="project-type">
+                      <li>Software QA</li>
+                    </ul>
+                    <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
+                  </a>
+                </li>
+    
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="./assets/pic/proj/golfscoringsystem.jpg" alt="golfscoringsystem" class="card-image">
+                    <h2 class="card-title">
+                      GolfServ: Golf Scoring Test Plan
+                    </h2>
+                    <ul class="project-type">
+                      <li>Software QA</li>
+                    </ul>
+                    <!-- This is the link: file:///C:/Users/balut/OneDrive/Desktop/SisonJLM-TestPlanforGolfServ.pdf -->
+                    <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
+                  </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="./assets/pic/proj/" alt="golfscoringsystem" class="card-image">
+                    <h2 class="card-title">
+                      Portfolio Website
+                    </h2>
+                    <ul class="project-type">
+                      <li>Software QA</li>
+                    </ul>
+                    <!-- This is the link: file:///C:/Users/balut/OneDrive/Desktop/SisonJLM-TestPlanforGolfServ.pdf -->
+                    <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
+                  </a>
+                </li>
+    
+              </ul>
+    
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+    
+            </div>
           </div>
+      </div>
         
+    </section>
 
-          <div class="socials">
-            <div class="socials-img">
-              <img src="./assets/pic/professionalpic2.png" alt="">
+    <section id="experiences">
+        <h1>Experience</h1>
+        <div class="widget">
+            <div class="tabs">
+    
+              <input type="radio" id="experience" name="tabs"  checked />
+              <label for="experience">Professional Experience</label>
+          
+              <input type="radio" id="certificate" name="tabs"  />
+              <label for="certificate">Certificates and Badges</label>
+    
             </div>
-            <div class="social-icons">
-              <a href="https://github.com/llu258/"><i class='bx bxl-github' id="icons"></i></a>
-              <a href="https://www.linkedin.com/in/jesus-luigi-sison-a695221a5/"><i class='bx bxl-linkedin-square' id="icons" ></i></a>
+    
+            <div class="tab-content">
+    
+              <div class="tab-content-1">
+                <h2>Professional Experience</h2>
+    
+                  <h3>Software QA Engineer Intern - Elinnov Technologies</h3>  
+                  <h4>Aug 2024 - Nov 2024</h4>
+                  <ul>
+                    <li>Do QA checks from software testing following the methodologies such as manual, regression, functional, end-to-end testing; 
+                      designing and updating test cases. Moreover, conducted thorough research about sustainability and its related data.</li>
+                  </ul>
+    
+                  <h3>Independent Contractor - Appen Ltd.</h3>  
+                  <h4>Aug 2023 - Feb 2024</h4>
+                  <ul>
+                    <li>Do fine-tuning and analyzing large-language models (LLMs) data under coding/programming domain. </li>
+                  </ul>
+    
+                  <h3>Student Intern - Tigernethost OPC</h3>  
+                  <h4>March 2022 - May 2022</h4>
+                  <ul>
+                    <li>Do research and technical documentations for firmware projects and contribute system functionality sketches (Arduino)</li>
+                  </ul>
+              </div>
+              
+              <div class="tab-content-2">
+                <h2>Certificates and Badges</h2>
+                <div class="cert-tile">
+                  <a href="https://www.credly.com/badges/3c4aa8b3-d5b4-4f29-938f-35b740bcfdb0" class="cert-item">
+                    <img src="./assets/pic/cert/awsAcademyCloudFoundation.png" class="cert-image">
+                      <p>AWS Academy Cloud Foundation</p>
+                  </a>
+                  <a href="https://www.credly.com/badges/941291c6-0010-4343-b00c-7c9527b6d577" class="cert-item">
+                    <img src="./assets/pic/cert/awsAcademyCloudArchitecting.png" class="cert-image">
+                      <p>AWS Academy Cloud Architecting</p>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1u06M6DFeU0-3pygpanBn5cjW_TUtmJPJ/view?usp=sharing" class="cert-item">
+                    <img src="./assets/pic/cert/cProgrammingForEmbeddedApps.png" class="cert-image">
+                      <p>C Programming For Embedded Applications</p>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1X-cOAE0Ny_yNz0gDuCGzwjdxzkEonuJr/view?usp=drive_link" class="cert-item">
+                    <img src="./assets/pic/cert/introToSoftwareTesting.png" class="cert-image">
+                      <p>Software Testing Introduction</p>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1afvCCuXPwbp20NlzrrsIYGgcC7fBDf-o/view?usp=sharing" class="cert-item">
+                    <img src="./assets/pic/cert/introSQLDatacamp.png" class="cert-image">
+                      <p>SQL Introductory</p>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1T8Zq4glCk19t5YhXX5-dcIxzr2isYKuN/view?usp=sharing" class="cert-item">
+                    <img src="./assets/pic/cert/intermediateSQLDaatacamp.png" class="cert-image">
+                      <p>SQL Intermediate</p>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1X-cOAE0Ny_yNz0gDuCGzwjdxzkEonuJr/view?usp=sharing" class="cert-item">
+                    <img src="./assets/pic/cert/machineLearning.png" class="cert-image">
+                      <p>Machine Learning</p>
+                  </a>
+                </div>
+              </div>
+         
             </div>
           </div>
-        </div>
-      </form>
-    </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+          <div class="contact-box">
+            <h1>Hi, there! 👋</h1>
+            <p>Let's get in touch and create something together. </p>
+            <div class="input-box">
+              <div class="input-grp">
+                <input type="hidden" name="access_key" value="4d704133-c2cd-4c03-9a24-ac806f1b393c">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="E-Mail Address">
+                <textarea name="message" class="message" id="" placeholder="Your Message"></textarea>
+              </div>
+              <div class="submit-btn">
+                <input type="submit" value="Send Message">
+              </div>
+
+            </div>
+          </div>
+        </form>
+    </section>
 
     <footer>
-      <div class="footer-content">
-        <h4 class="copyright">Jesus Luigi Sison</h4>
-        <h4 class="rights">All Rights Reserved 2025</h4>
-      </div>
+        <div class="footer-content">
+            <h4 class="copyright">Jesus Luigi Sison</h4>
+            <div class="socials">
+              <div class="social-icons">
+                <a href="https://github.com/llu258/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/jesus-luigi-sison-a695221a5/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedin">
+                </a>
+              </div>
+          </div>
+
+            <h4 class="rights">All Rights Reserved 2025</h4>
+          </div>
     </footer>
-    
-  
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <script src="script.js"></script>
-  </body>
+    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    <script src="script.js" defer></script>
+</body>
 </html>
