@@ -11,15 +11,18 @@ Welcome to my personal portfolio website showcasing my journey as a full-stack d
 ## 🚀 Visit the Portfolio  
 Check it out here: [llu258.github.io](https://llu258.github.io)  
 
-# Portfolio Website Update 🚧  
+## Portfolio Website Version Overview 🚧 
 
-## 📅 Status: In Progress  
+- v0.1 - Website structure implementation
 
-I am currently working on updates and enhancements to my portfolio website to improve the user experience and better showcase my skills and projects.  
+- v0.2 - I am currently working on updates and enhancements to my portfolio website to improve the user experience and better showcase my skills and projects.  
 
-### 🛠️ Planned Improvements  
-- Enhanced responsive design for various screen sizes  
-- Improved visuals and interactive components  
+- v0.3 - Implement additional code for improved responsiveness. Fixing the experience/certificate appearance for mobile viewing. Also implement authentication for invalid input for contact forms (2/11/25).
+
+### 🛠️ Planned Improvements 
+- Add banner to the site noting that the site is still under development.
+- Enhanced responsive design for various screen sizes for the project and experience/certificate pages
+- Dark mode feature implementation
 - Optimized navigation and content organization  
 - Addition of new recent projects  
 
