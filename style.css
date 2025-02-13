@@ -612,6 +612,7 @@ a.home-link{
 }
 
 .widget{
+    padding-left: 100px;
     width: 90%;
     max-width: 600%;
     padding: 20px;
@@ -741,17 +742,17 @@ a.home-link{
         border: 1px solid;
     }
 
-    #experiences .cert-image {
+    .cert-image {
         height: 100px;
     }
 
-    #experiences .cert-item {
+    .cert-item {
         margin: 5px;
         padding: 5px;
         width: 200px;
     }
 
-    #experiences .cert-item p {
+    .cert-item p {
         display: none;
     }
 
@@ -770,7 +771,7 @@ a.home-link{
         line-height: 1.3;
     }
 
-    #experiences .cert-image {
+    .cert-image {
         height: 100px;
     }
 
@@ -786,23 +787,25 @@ a.home-link{
 
     }
 
-    #experiences .cert-tile {
+    .cert-tile {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+    }
+
+    .cert-tile {
         padding: 2px;
     }
 
-
-    #experiences .cert-item {
+    .cert-item {
         height: 120px;
     }
 
-    #experiences .cert-image {
+    .cert-image {
         height: 80px;
     }
 
-    #experiences .tabs label {
+    .tabs label {
         font-size: 14px;
     }
 
