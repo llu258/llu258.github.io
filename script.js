@@ -42,7 +42,7 @@ new Swiper('.card-wrapper', {
   });
 
   new FinisherHeader({
-    "count": 555,
+    "count": 55,
     "size": {
       "min": 1,
       "max": 18,
