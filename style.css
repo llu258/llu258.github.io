@@ -739,8 +739,6 @@ transform: translateY(0);
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    
-    
 }
 
 
@@ -770,6 +768,7 @@ transform: translateY(0);
     .cert-item p {
         display: none;
     }
+
 
 
 }
@@ -814,6 +813,14 @@ transform: translateY(0);
 
     .cert-item {
         height: 120px;
+    }
+
+    #experiences .tab-content-1 {
+        line-height: 1.2;
+    }
+
+    .tab-content-1 li {
+        font-size: 16px;
     }
 
     .cert-image {
