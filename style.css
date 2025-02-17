@@ -1,14 +1,14 @@
 :root {
-    --background-color: rgb(250, 250, 250);
+    --base-color: rgb(250, 250, 250);
+    --accent-color: rgb(203, 232, 241);
     --text-color: black;
     --font-family: 'Hanken Grotesk', serif;
-    --box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21);
+    --box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
     --border: 1px solid black;
     
 }
 
 * {
-    padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
@@ -18,7 +18,7 @@
 
 body {
     font-family: var(--font-family);
-    background-color: var(--background-color);
+    background-color: var(--base-color);
 
 }
 
@@ -28,8 +28,9 @@ nav {
     position: fixed;
     height: 80px;
     width: 100%;
-    background-color: rgba(251, 255, 255, 0.8);
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--base-color);
+    opacity: 0.8;
+    box-shadow: var(--box-shadow);
     z-index: 2;
     border-bottom: 1px solid transparent;
     border-radius: 20px;
@@ -42,8 +43,6 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 0 100px;
-    
-
 }
 
 a.home-link{ 
@@ -66,8 +65,6 @@ a.home-link{
 .nav-container .nav-menu li a {
     color: var(--text-color);
     font-weight: 700;
-    font-size: 18px;
-    padding: 3 20px;
     transition: all 0.03s ease-out;
 }
 
@@ -164,14 +161,27 @@ a.home-link{
     position: relative;
 }
 
+.fade-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+  
+.fade-down.show {
+opacity: 1;
+transform: translateY(0);
+}
+
 .hero .container {
     height: 100%;
+    padding: 60px;
 }
 
 .hero .row{
     display: flex;
     flex-direction: row;
-    padding: 8%; 
+    padding: 100px;
+    gap: 20px;
 }
 
 .hero .desc{
@@ -179,6 +189,8 @@ a.home-link{
     flex-direction: column;
     justify-content: center;
 }
+
+
 
 .hero-img{
     height: 500px;
@@ -207,7 +219,7 @@ a.home-link{
 }
 
 .hero .cta-btn button {
-    font-family: 'Hanken Grotesk', serif;
+    font-family: var(--font-family);
     font-size: 18px;
     padding: 8px;
 }
@@ -330,7 +342,6 @@ a.home-link{
 }
 
 #about .text {
-    font-size: 21px;
     padding: 0 0 0 50px;
 }
 
@@ -401,8 +412,6 @@ a.home-link{
         padding: 0 8px;
     }
 
-
-
     #about .content p {
         line-height: 1.25;
         font-weight: 400;
@@ -426,7 +435,7 @@ a.home-link{
 @media (max-width: 500px) {
     #about .content p {
         line-height: 1.1;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #about .content {
@@ -475,19 +484,14 @@ a.home-link{
 
 .project-type li{  
     display: inline-block;
-    border: var(--border);
-    padding: 3px 15px;
+    padding: 3px 13px;
     border-radius: 15px;
-    margin: 6px 5px;    
-}
-
-
-.container {
-    padding: 100px;
+    margin: 6px 5px;   
+    font-size: 14px; 
+    background: var(--accent-color)
 }
 
 .card-wrapper {
-    width: 170px 0px;
     margin: 0 60px 20px;
     padding: 20px 40px;
     overflow: hidden;
@@ -495,15 +499,6 @@ a.home-link{
 
 .card-wrapper ul{
     padding-inline-start: 0px;
-}
-
-
-.card-wrapper img{
-    width: 100%;
-}
-
-.card-list .card-item{
-    list-style: none;
 }
 
 .card-list .card-item .card-link{
@@ -516,6 +511,30 @@ a.home-link{
     box-shadow: var(--box-shadow);
     transition: 0.2s ease;
     border: 2px solid transparent;
+}
+
+#projects .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 12px;
+}
+
+#projects .card-item:hover .description{
+    opacity: 1;
 }
 
 .card-list .card-item .card-link:active {
@@ -535,11 +554,7 @@ a.home-link{
 
 .card-list .card-link .card-button {
     height: 35px;
-    width: auto;
-    color: var(--text-color);
-    border-radius: 50%;
     transition: 0.4s ease;
-    border: 2px solid black;
     background: none;
     cursor: pointer;
 }
@@ -621,7 +636,6 @@ a.home-link{
     background-color: transparent;
     box-shadow: var(--box-shadow);
 
-
 }
 
 .tabs{
@@ -630,7 +644,7 @@ a.home-link{
     --tab-count: 2;
     display: flex;
     height: 50px;
-    border-block-end: 1px solid gainsboro;
+    border-block-end: 1px solid var(--accent-color);
     isolation: isolate;
 }
 
@@ -650,6 +664,9 @@ a.home-link{
 
 .tabs input:checked + label {
     color: var(--text-color);
+    background: var(--accent-color);
+    z-index: -2;
+    border-radius: 10px 10px 0 0;
 }
 
 .tabs::after {
@@ -663,7 +680,6 @@ a.home-link{
     border: var(--border);
     border-block-end: none;
     translate: calc(var(--active) * 100%);
-    transition: translate 0.5s ease-in-out;
 }
 
 .tabs:has(:checked:nth-of-type(1)){
@@ -887,7 +903,7 @@ a.home-link{
 #contact form input, textarea{
     font-family: var(--font-family);
     font-size: 15px;
-    background-color: rgb(224, 242, 248);
+    background-color: var(--accent-color);
 }
 
 #contact form textarea {
@@ -901,18 +917,31 @@ a.home-link{
     margin-top: 20px;
 }
 
-#contact .submit-btn input {
-    width: 200px;
-    padding: 10px;
+#contact .submit-btn button{
     border: 2px solid;
-    border-radius: 8px;   
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    padding: 10px;
+    background: var(--accent-color);
+    cursor: pointer;
 }
 
-#contact .submit-btn input:hover {
+#contact .submit-btn button:hover {
     background-color: var(--text-color);
-    color: rgb(224,242,248);
-    border-color: rgb(224,242,248);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
     cursor: pointer;
+}
+
+#contact #errorMessage {
+    color: red; 
+    font-size: 14px;
+    display: none;
 }
 
 @media screen and (max-width: 1200px) {
