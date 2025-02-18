@@ -966,8 +966,9 @@ transform: translateY(0);
     margin: 10px 0;
 }
 
-#contact .input-grp::placeholder {
-    font-family: initial;
+#contact input,
+#contact textarea {
+    color: var(--text-color);
 }
 
 #contact .message-grp {
