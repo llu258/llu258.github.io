@@ -4,8 +4,16 @@
     --text-color: black;
     --font-family: 'Hanken Grotesk', serif;
     --box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-    --border: 1px solid black;
-    
+    --border: 1px solid black;  
+}
+
+.darkmode {
+    --base-color: rgb(26, 26, 46);
+    --accent-color: rgb(27, 21, 44);
+    --text-color: #f0e8e8;
+    --font-family: 'Hanken Grotesk', serif;
+    --box-shadow: 0 10px 20px 0 rgba(145, 144, 146, 0.15);
+    --border: 1px solid rgb(95, 95, 95);  
 }
 
 * {
@@ -75,6 +83,7 @@ a.home-link{
 }
 
 .nav-toggle {
+    
     display: none;
     border: none;
     background: none;
@@ -101,16 +110,17 @@ a.home-link{
     .nav-container .nav-menu {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.7rem !important;
+        gap: 2rem;
         height: 100vh;
-        width: 250px;
+        width: 100%;
         top: 0;
         right: 0;
-        padding: 110px 50px;
-        background-color: rgba(250, 250, 250, 0.9);
+        background-color: var(--base-color);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.05);
         position: absolute;
         display: none;
+        padding-top: 100px;
+        align-items: center;
     }
 
     .nav-container .nav-menu.active{
@@ -133,6 +143,10 @@ a.home-link{
 
     .nav-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu li a {
+        font-size: 26px;
     }
 }
 
@@ -160,6 +174,35 @@ a.home-link{
     position: relative;
 }
 
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    right: 100px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
 .fade-down {
     opacity: 0;
     transform: translateY(-20px);
@@ -177,6 +220,7 @@ transform: translateY(0);
 }
 
 .hero .row{
+    color: var(--text-color);
     display: flex;
     flex-direction: row;
     padding: 100px;
@@ -215,19 +259,27 @@ transform: translateY(0);
 .hero .cta-btn {
     display: inline-flex;
     gap: 5px;
+    align-items: center;
 }
 
 .hero .cta-btn button {
     font-family: var(--font-family);
     font-size: 18px;
+    font-weight: 900;
     padding: 8px;
+    background-color: var(--base-color);
+    border: 2px solid;
+    border-radius: 5px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
-.hero .cta-btn img{
-    height: 40px;
+.hero .cta-btn .social-icons .bx{
+    font-size: 44px;
+    color: var(--text-color);
     padding: 5px;
-    
 }
+
 
 
 @media (max-width: 1200px) {
@@ -238,6 +290,10 @@ transform: translateY(0);
         align-items: center;
         justify-content: center; 
         padding: inherit; 
+    }
+
+    .hero #theme-switch {
+        right: 50px;
     }
 
     .hero .row {
@@ -261,7 +317,7 @@ transform: translateY(0);
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
     .hero .container {
         max-width: 100%;
         height: 100%;
@@ -295,8 +351,8 @@ transform: translateY(0);
         justify-content: center;
     }
 
-    .hero .cta-btn img{
-        height: 70px;
+    .hero .cta-btn .social-icons .bx {
+        font-size: 60px;
         padding: 10px; 
     }
 
@@ -306,12 +362,20 @@ transform: translateY(0);
     
 }
 
+@media (max-width: 480px) {
+    .hero #theme-switch {
+        right: 20px;
+        height: 30px;
+    }
+}
+
 
 
 
 /* ABOUT */
 #about {
     height: 100vh;
+    color: var(--text-color);
 }
 
 #about .content {
@@ -411,6 +475,8 @@ transform: translateY(0);
         padding: 0 8px;
     }
 
+
+
     #about .content p {
         line-height: 1.25;
         font-weight: 400;
@@ -457,6 +523,7 @@ transform: translateY(0);
 
 #projects {
     height: 100vh;
+    color: var(--text-color);
 }
 
 #projects .content {
@@ -466,9 +533,7 @@ transform: translateY(0);
 #projects h1{
     width: auto;
     font-size: 30px;
-    padding: 0 100px;
-    
-    
+    padding: 0 100px;   
 }
 
 .proj-title {
@@ -487,13 +552,14 @@ transform: translateY(0);
     border-radius: 15px;
     margin: 6px 5px;   
     font-size: 14px; 
-    background: var(--accent-color)
+    background: var(--accent-color);
 }
 
 .card-wrapper {
     margin: 0 60px 20px;
     padding: 20px 40px;
     overflow: hidden;
+    
 }
 
 .card-wrapper ul{
@@ -617,6 +683,7 @@ transform: translateY(0);
 /* EXPERIENCE */
 #experiences {
     height: 100vh;
+    color: var(--text-color);
 }
 
 #experiences h1 {
@@ -739,6 +806,8 @@ transform: translateY(0);
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    
+    
 }
 
 
@@ -768,7 +837,6 @@ transform: translateY(0);
     .cert-item p {
         display: none;
     }
-
 
 
 }
@@ -833,12 +901,12 @@ transform: translateY(0);
 
 }
 
-
 /* CONTACT */
 #contact {
     width: 100%;
     height: 100vh;
     padding: 100px;
+    color: var(--text-color);
 }
 
 #contact h1 {
@@ -888,7 +956,7 @@ transform: translateY(0);
 #contact .input-grp input,
 #contact .input-grp textarea {
     width: 100%;
-    border: 2px solid;
+    border: var(--border);
     border-radius: 10px;
 
 }
@@ -924,7 +992,7 @@ transform: translateY(0);
 }
 
 #contact .submit-btn button{
-    border: 2px solid;
+    border: var(--border);
     border-radius: 5px;
     height: 40px;
     display: flex;
@@ -935,6 +1003,8 @@ transform: translateY(0);
     padding: 10px;
     background: var(--accent-color);
     cursor: pointer;
+    color: var(--text-color);
+    
 }
 
 #contact .submit-btn button:hover {
@@ -1000,7 +1070,9 @@ footer h4 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: var(--text-color);
 }
+
 
 footer .copyright {
     width: 30%;
@@ -1014,8 +1086,9 @@ footer .rights {
     width: 30%;
 }
 
-footer .socials img {
-    height: 50px;
+footer .socials .bx {
+    font-size: 35px;
     padding: 10px;
+    color: var(--text-color)
 }
 
