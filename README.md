@@ -1,4 +1,4 @@
-# llu258.github.io - Jesus Luigi Sison's Portfolio  
+# Portfolio Website
 
 Welcome to my personal portfolio website showcasing my journey as a full-stack developer and QA engineer.  
 
