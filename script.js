@@ -137,15 +137,23 @@ new Swiper('.card-wrapper', {
     let email = document.getElementById("email").value.trim();
     let message = document.getElementById("message").value.trim();
     let errorMessage = document.getElementById("errorMessage");
+    let formContainer = document.getElementById("contact-box"); // Target the form container
   
     if (!name || !email || !message) {
-      event.preventDefault(); 
-      errorMessage.style.display = "block";
-      errorMessage.textContent = "Please fill out all required fields.";
-    } else {
-      errorMessage.style.display = "none"; 
-    }
-  });
+        event.preventDefault(); 
+        errorMessage.style.display = "flex";
+        errorMessage.textContent = "Please fill out all required fields.";
+        
+        // Add vibrate animation
+        formContainer.classList.add("vibrate");
 
+        // Remove the class after animation ends to allow re-triggering
+        setTimeout(() => {
+            formContainer.classList.remove("vibrate");
+        }, 300);
+    } else {
+        errorMessage.style.display = "none"; 
+    }
+});
 
 
